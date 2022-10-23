@@ -1,1 +1,1 @@
-# fast_food_eda
+# EDA example using a fast food orders system
