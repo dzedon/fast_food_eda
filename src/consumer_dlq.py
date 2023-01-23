@@ -7,12 +7,12 @@ from kafka import KafkaProducer
 
 logging.basicConfig(level=logging.INFO)
 
-DLQ_TOPIC = "DLQ"
+DLQ_TOPIC = "orders_details_dlq"
 GROUP_ID = "MY_GROUP"
 
 consumer = KafkaConsumer(
     DLQ_TOPIC,
-    # group_id=GROUP_ID,
+    group_id=GROUP_ID,
     bootstrap_servers="localhost:29092",
 )
 

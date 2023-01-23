@@ -64,3 +64,4 @@ for message in consumer:
         producer.send(DLQ_TOPIC, json.dumps(consumed_message).encode("utf-8"))
 
 
+

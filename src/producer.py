@@ -79,7 +79,7 @@ def generate_order_by_input():
 
             data = {
                 "order_id": order_id,
-                "user_id": 'dan',
+                "user_id": f'dan{i}',
                 "total_cost": 0,
                 "items": "burger",
             }
